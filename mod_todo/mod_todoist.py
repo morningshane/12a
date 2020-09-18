@@ -1,3 +1,4 @@
+import todoist
 import logging
 import options
 
