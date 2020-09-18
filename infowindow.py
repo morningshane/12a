@@ -8,6 +8,7 @@ import json
 import logging
 import traceback
 from mod_infowindow import infowindow
+import options
 
 # Select pluggable module for todo list, calendar and weather.
 # Replace the mod_<name> with one of:
