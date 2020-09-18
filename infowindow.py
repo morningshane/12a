@@ -1,14 +1,10 @@
 #!/usr/bin/env python
 
-from mod_weather import mod_owm
-from mod_calendar import mod_google
-from mod_todo import mod_todoist
 import sys
 import json
 import logging
 import traceback
 from mod_infowindow import infowindow
-import options
 
 # Select pluggable module for todo list, calendar and weather.
 # Replace the mod_<name> with one of:
@@ -28,7 +24,7 @@ with open(iw_utils.getCWD()+"/config.json") as config_file:
 
 ## Rotation. 0 for desktop, 180 for hanging upside down
 rotation = config_data["general"]["rotation"]
-todo = config_data["todo"]
+todo_opts = config_data["todo"]
 calendar_opts = config_data["calendar"]
 weather_opts = config_data["weather"]
 
