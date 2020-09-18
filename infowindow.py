@@ -100,7 +100,7 @@ def main():
 
     # DISPLAY TODO INFO
     # =========================================================================
-    todo_items = todo.list()
+    todo_items = ToDo.list()
     logging.debug("Todo Items")
     logging.debug("-----------------------------------------------------------------------")
     t_y = 94
