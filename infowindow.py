@@ -91,8 +91,8 @@ def main():
     iw.line(0, 91, 640, 91, 'black')        # Bottom Black Line
 
     # Todo / Weather Titles
-    iw.text(440, 64, "TODO", 'robotoBlack24', 'white')
-    iw.text(95, 64, "CALENDAR", 'robotoBlack24', 'white')
+    iw.text(440, 64, "TODO", 'yaheiRegular24', 'white')
+    iw.text(95, 64, "CALENDAR", 'yaheiRegular24', 'white')
 
 
     # DISPLAY TODO INFO
