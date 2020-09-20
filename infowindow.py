@@ -157,7 +157,7 @@ def main():
     iw.text(t_desc_posx, 25, u_temp, 'robotoBlack18', 'white')
 
     # Wind 
-    iw.text(405, 5, weather['wind']['dir'], 'robotoBlack14', 'black')
+    iw.text(405, 5, weather['wind']['dir'], 'robotoRegular14', 'black')
     iw.text(380, 35, str(weather['wind']['speed'])+u_speed, 'robotoRegular14', 'black')
 
     # Rain
