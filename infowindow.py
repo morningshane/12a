@@ -158,15 +158,15 @@ def main():
 
     # Wind 
     iw.text(405, 5, weather['wind']['dir'], 'robotoRegular14', 'black')
-    iw.text(380, 35, str(weather['wind']['speed'])+u_speed, 'robotoRegular14', 'black')
+    iw.text(380, 31, str(weather['wind']['speed'])+u_speed, 'robotoRegular14', 'black')
 
     # Rain
-    iw.text(481, 29, "1hr: "+str(weather['rain']['1h']), 'robotoRegular14', 'black')
-    iw.text(481, 44, "3hr: "+str(weather['rain']['3h']), 'robotoRegular14', 'black')
+    iw.text(481, 31, "1hr: "+str(weather['rain']['1h']), 'robotoRegular14', 'black')
+    iw.text(481, 46, "3hr: "+str(weather['rain']['3h']), 'robotoRegular14', 'black')
 
     # Snow
-    iw.text(573, 29, "1hr: "+str(weather['snow']['1h']), 'robotoRegular14', 'black')
-    iw.text(573, 44, "3hr: "+str(weather['snow']['3h']), 'robotoRegular14', 'black')
+    iw.text(573, 31, "1hr: "+str(weather['snow']['1h']), 'robotoRegular14', 'black')
+    iw.text(573, 46, "3hr: "+str(weather['snow']['3h']), 'robotoRegular14', 'black')
 
     # Write to screen
     # =========================================================================
