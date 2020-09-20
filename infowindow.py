@@ -146,8 +146,8 @@ def main():
     deg_symbol = u"\u00b0"
     iw.bitmap(2, 2, weather['icon'])
     iw.text(70, 2, weather['description'].title(), 'robotoBlack24', 'black')
-    iw.text(70, 35, weather['country'], 'robotoRegular18', 'black')
-    iw.text(154, 35, weather['city id'], 'robotoRegular18', 'black')
+    iw.text(70, 35, city['country'], 'robotoRegular18', 'black')
+    iw.text(154, 35, city['name'], 'robotoRegular18', 'black')
     
     # Temp ( adjust for str length )
     (t_x, t_y) = iw.getFont('robotoBlack48').getsize(str(weather['temp_cur'])+deg_symbol)
