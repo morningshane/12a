@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: UTF-8 -*-
 
 import sys
 import json
@@ -6,6 +7,8 @@ import logging
 import traceback
 from mod_infowindow import infowindow
 import sys
+import os
+
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -14,8 +17,7 @@ sys.setdefaultencoding('utf-8')
 # TODO: mod_todoist, mod_teamwork
 # CALENDAR: mod_google, mod_ical
 # WEATHER: mod_owm, mod_wunderground
-#/usr/bin/env python
-# -*- coding: UTF-8 -*-
+
 from mod_utils import iw_utils
 from mod_todo import mod_todoist as modTodo             # TODO
 from mod_calendar import mod_google as modCalendar      # CALENDAR
