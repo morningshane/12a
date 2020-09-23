@@ -98,8 +98,8 @@ def main():
     iw.line(0, 91, 640, 91, 'black')        # Bottom Black Line
 
     # Todo / Weather Titles
-    iw.text(465, 59, u"待办", 'robotoRegular24', 'white')
-    iw.text(120, 59, u"日历", 'robotoRegular24', 'white')
+    iw.text(460, 60, u"待办", 'robotoRegular24', 'white')
+    iw.text(130, 60, u"日历", 'robotoRegular24', 'white')
     iw.text(70, 30, "Box Hill North", 'robotoBlack24', 'red')
 
 
