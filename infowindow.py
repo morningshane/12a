@@ -179,5 +179,5 @@ def main():
     iw.display(rotation)
 
 if __name__ == '__main__':
-    app.config['JSON_AS_ASCII'] = False
+    config['JSON_AS_ASCII'] = False
     main()
