@@ -5,7 +5,7 @@ import options
 class ToDo:
     def __init__(self, opts):
         logging.debug("Todo API: TODOIST")
-        self.api = todoist.TodoistAPI('4b21447369cd11bdfb05ee6ee73987967e37a9e2')
+        self.api = todoist.TodoistAPI('c74260b23072b73b81da0034d8182849c2f41399')
         self.api.sync()
 
     def list(self):
