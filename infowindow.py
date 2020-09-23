@@ -110,10 +110,10 @@ def main():
     logging.debug("-----------------------------------------------------------------------")
     t_y = 94
     for todo_item in todo_items:
-        iw.text(333, t_y, str(todo_item[u"'content'"]), 'robotoRegular18', 'black')
+        iw.text(333, t_y, u"str(todo_item['content'])", 'robotoRegular18', 'black')
         t_y = (t_y + 24)
         iw.line(325, (t_y - 2), 640, (t_y - 2), 'black')
-        logging.debug("ITEM: "+todo_item[u"'content'"])
+        logging.debug(u"ITEM: "+todo_item['content'])
 
     # DISPLAY CALENDAR INFO
     # =========================================================================
