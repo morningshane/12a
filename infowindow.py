@@ -5,6 +5,9 @@ import json
 import logging
 import traceback
 from mod_infowindow import infowindow
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 # Select pluggable module for todo list, calendar and weather.
 # Replace the mod_<name> with one of:
