@@ -62,6 +62,7 @@ class InfoWindow():
             'robotoRegular14': ImageFont.truetype(roboto+"Regular.ttf", 14),
             'robotoBlack48': ImageFont.truetype(roboto+"Black.ttf", 48)
             'robotoGood24': ImageFont.truetype(roboto+"Good.ttf", 24)
+            
         }
 
     def truncate(self, str, font):
