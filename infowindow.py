@@ -113,7 +113,7 @@ def main():
         iw.text(333, t_y, str(todo_item[u'content']), 'robotoRegular18', 'black')
         t_y = (t_y + 24)
         iw.line(325, (t_y - 2), 640, (t_y - 2), 'black')
-        logging.debug("ITEM: "+todo_item['content'])
+        logging.debug("ITEM: "+todo_item[u'content'])
 
     # DISPLAY CALENDAR INFO
     # =========================================================================
@@ -132,8 +132,8 @@ def main():
         iw.text((dt_x + 7), (c_y + 5), iw.truncate(str(cal_item[u'content']), 'robotoRegular18'), 'robotoRegular18', 'black')
         c_y = (c_y + 32)
         iw.line(0, (c_y - 2), 313, (c_y - 2), 'black')
-        # logging.debug("ITEM: "+str(cal_item['date']), str(cal_item['time']), str(cal_item['content']))
-        logging.debug("ITEM: "+str(cal_item['content']))
+        # logging.debug("ITEM: "+str(cal_item['date']), str(cal_item['time']), str(cal_item[u'content']))
+        logging.debug("ITEM: "+str(cal_item[u'content']))
 
     # DISPLAY WEATHER INFO
     # =========================================================================
