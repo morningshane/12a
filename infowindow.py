@@ -8,9 +8,11 @@ import traceback
 from mod_infowindow import infowindow
 import sys
 import os
+import codecs
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
+sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
 
 # Select pluggable module for todo list, calendar and weather.
 # Replace the mod_<name> with one of:
