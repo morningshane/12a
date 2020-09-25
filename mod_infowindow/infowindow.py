@@ -58,9 +58,9 @@ class InfoWindow():
 
             'robotoBlack24': ImageFont.truetype(roboto+"Black.ttf", 24),
             'robotoBlack18': ImageFont.truetype(roboto+"Black.ttf", 18),
-            'robotoRegular18': ImageFont.truetype(roboto+"Regular.ttf", 18, encoding="utf-8"),
-            'robotoRegular14': ImageFont.truetype(roboto+"Regular.ttf", 14, encoding="utf-8"),
-            'robotoRegular24': ImageFont.truetype(roboto+"Regular.ttf", 24, encoding="utf-8"),
+            'robotoRegular18': ImageFont.truetype(roboto+"Regular.ttf", 18, encoding="unic"),
+            'robotoRegular14': ImageFont.truetype(roboto+"Regular.ttf", 14, encoding="unic"),
+            'robotoRegular24': ImageFont.truetype(roboto+"Regular.ttf", 24, encoding="unic"),
             'robotoBlack48': ImageFont.truetype(roboto+"Black.ttf", 48)
               
         }
