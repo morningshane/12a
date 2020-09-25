@@ -15,7 +15,6 @@ if os.path.exists(libdir):
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
-body = str(body,"utf-8")
 
 # Select pluggable module for todo list, calendar and weather.
 # Replace the mod_<name> with one of:
@@ -33,6 +32,7 @@ from mod_weather import mod_owm as modWeather           # WEATHER
 # Configuration ###############################################################
 with open(iw_utils.getCWD()+"/config.json") as config_file:
     config_data = json.load(config_file)
+    json.dumps(iw_utils, ensure_ascii=False)
 
 ## Rotation. 0 for desktop, 180 for hanging upside down
 rotation = config_data["general"]["rotation"]
