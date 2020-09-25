@@ -120,7 +120,7 @@ def main():
         iw.line(325, (t_y - 2), 640, (t_y - 2), 'black')
         str(todo_item['content']=
         logging.debug("ITEM: "+todo_item['content'])
-        str= "unicode"
+        string.encode(encoding='UTF-8',errors='strict')
         
 
     # DISPLAY CALENDAR INFO
@@ -142,7 +142,7 @@ def main():
         iw.line(0, (c_y - 2), 313, (c_y - 2), 'black')
         # logging.debug("ITEM: "+str(cal_item['date']), str(cal_item['time']), str(cal_item['content']))
         logging.debug("ITEM: "+str(cal_item['content']))
-        str= "unicode"
+        string.encode(encoding='UTF-8',errors='strict')
         
 
     # DISPLAY WEATHER INFO
