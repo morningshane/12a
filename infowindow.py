@@ -115,15 +115,11 @@ def main():
     logging.debug("-----------------------------------------------------------------------")
     t_y = 94
     for todo_item in todo_items:
-        iw.text(333, t_y, u"unicode_text", 'robotoRegular18', 'black')
-        unicode_text = str(todo_item['content'])
+        iw.text(333, t_y, str(todo_item['content']), 'robotoRegular18', 'black')
         t_y = (t_y + 24)
         iw.line(325, (t_y - 2), 640, (t_y - 2), 'black')
-        str(todo_item['content']=
         logging.debug("ITEM: "+todo_item['content'])
         
-        
-
     # DISPLAY CALENDAR INFO
     # =========================================================================
     cal_items = cal.list()
@@ -138,15 +134,12 @@ def main():
         (x, y) = iw.text(3, c_y, str(cal_item['date']), 'robotoRegular14', 'black')
         iw.line((dt_x + 5), c_y, (dt_x + 5), (c_y +32), 'black')
         iw.text(3, (c_y + 15), str(cal_item['time']), 'robotoRegular14', 'black')
-        iw.text((dt_x + 7), (c_y + 5), iw.truncate(u"unicode_text1"), 'robotoRegular18'), 'robotoRegular18', 'black')
+        iw.text((dt_x + 7), (c_y + 5), iw.truncate(str(cal_item['content']), 'robotoRegular18'), 'robotoRegular18', 'black')
         c_y = (c_y + 32)
-        unicode_text1= str(cal_item['content'])
         iw.line(0, (c_y - 2), 313, (c_y - 2), 'black')
         # logging.debug("ITEM: "+str(cal_item['date']), str(cal_item['time']), str(cal_item['content']))
         logging.debug("ITEM: "+str(cal_item['content']))
         
-        
-
     # DISPLAY WEATHER INFO
     # =========================================================================
     weather = weather.list()
