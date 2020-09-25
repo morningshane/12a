@@ -31,7 +31,8 @@ from mod_weather import mod_owm as modWeather           # WEATHER
 
 # Configuration ###############################################################
 with open(iw_utils.getCWD()+"/config.json") as config_file:
-    config_data = json.load(config_file, ensure_ascii=False)
+    config_data = json.load(config_file)
+    json.dump(config_file,ensure_ascii=False)
 
 ## Rotation. 0 for desktop, 180 for hanging upside down
 rotation = config_data["general"]["rotation"]
