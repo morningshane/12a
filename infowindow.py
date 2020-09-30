@@ -13,7 +13,6 @@ libdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__)
 if os.path.exists(libdir):
     sys.path.append(libdir)
 
-reload(sys)
 sys.setdefaultencoding('utf-8')
 
 # Select pluggable module for todo list, calendar and weather.
