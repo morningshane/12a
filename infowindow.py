@@ -130,10 +130,10 @@ def main():
     (dt_x, dt_y) = iw.getFont('robotoRegular14').getsize('12-99-2000')
 
     for cal_item in cal_items:
-        (x, y) = iw.text(3, c_y, str(cal_item['date']), 'robotoRegular14', 'black')
+        (x, y) = iw.text(3, c_y, str(cal_item['date']), 'robotoRegular10', 'black')
         iw.line((dt_x + 5), c_y, (dt_x + 5), (c_y +32), 'black')
-        iw.text(3, (c_y + 15), str(cal_item['time']), 'robotoRegular14', 'black')
-        iw.text((dt_x + 7), (c_y + 15), iw.truncate(unicode(cal_item['content']), 'yaheiRegular18'), 'yaheiRegular18', 'black')
+        iw.text(3, (c_y + 15), str(cal_item['time']), 'robotoRegular10', 'black')
+        iw.text((dt_x + 7), c_y, iw.truncate(unicode(cal_item['content']), 'yaheiRegular18'), 'yaheiRegular18', 'black')
         c_y = (c_y + 26)
         iw.line(0, (c_y - 3), 313, (c_y - 3), 'black')
         # logging.debug("ITEM: "+str(cal_item['date']), str(cal_item['time']), str(cal_item['content']))
