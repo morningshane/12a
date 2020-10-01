@@ -62,9 +62,14 @@ class InfoWindow():
             'robotoRegular14': ImageFont.truetype(roboto+"Regular.ttf", 14),
             'robotoRegular24': ImageFont.truetype(roboto+"Regular.ttf", 24),
             'robotoBlack48': ImageFont.truetype(roboto+"Black.ttf", 48)
-              
+             
         }
-
+        
+        'Yahei18' = ImageFont.truetype('fonts/Yahei.ttf, 18) 
+        'Yahei24' = ImageFont.truetype('fonts/Yahei.ttf, 24)
+                                       
+                                       
+                                       
     def truncate(self, str, font):
         num_chars = len(str)
         for char in str:
