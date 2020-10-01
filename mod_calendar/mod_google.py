@@ -28,7 +28,7 @@ class Cal:
         items = []
         for event in events:
             start = event['start'].get('dateTime', event['start'].get('date'))
-            st_date = dt.strftime(dtparse(start), format='%m-%d-%Y')
+            st_date = dt.strftime(dtparse(start), format='%d-%m-%Y')
             st_time = dt.strftime(dtparse(start), format='%I:%M%p')
             items.append({
                 "date": st_date,
