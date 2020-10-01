@@ -63,8 +63,8 @@ class InfoWindow():
             'robotoRegular14': ImageFont.truetype(roboto+"Regular.ttf", 14),
             'robotoRegular24': ImageFont.truetype(roboto+"Regular.ttf", 24),
             'robotoBlack48': ImageFont.truetype(roboto+"Black.ttf", 48)
-            'Yahei18': ImageFont.truetype(yahei+"Regular.ttf", 18) 
-            'Yahei24': ImageFont.truetype(yahei+"Regular.ttf", 24)
+            'yaheiRegular18': ImageFont.truetype(yahei+"Regular.ttf", 18) 
+            'yaheiRegular24': ImageFont.truetype(yahei+"Regular.ttf", 24)
             
         }
         
