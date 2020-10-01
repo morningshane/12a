@@ -54,6 +54,7 @@ class InfoWindow():
 
     def initFonts(self):
         roboto = self.getCWD()+"/fonts/roboto/Roboto-"
+        yahei = self.getCWD()+"/fonts/yahei/Yahei-"
         self.fonts = {
 
             'robotoBlack24': ImageFont.truetype(roboto+"Black.ttf", 24),
@@ -61,18 +62,12 @@ class InfoWindow():
             'robotoRegular18': ImageFont.truetype(roboto+"Regular.ttf", 18),
             'robotoRegular14': ImageFont.truetype(roboto+"Regular.ttf", 14),
             'robotoRegular24': ImageFont.truetype(roboto+"Regular.ttf", 24),
-            'robotoBlack48': ImageFont.truetype(roboto+"Black.ttf", 48)         
-        }
-        
-        yahei = self.getCWD()+"/fonts/yahei/Yahei-"
-        self.fonts = {
-
+            'robotoBlack48': ImageFont.truetype(roboto+"Black.ttf", 48), 
             'yaheiRegular18': ImageFont.truetype(yahei+"Regular.ttf", 18), 
-            'yaheiRegular24': ImageFont.truetype(yahei+"Regular.ttf", 24)      
+            'yaheiRegular24': ImageFont.truetype(yahei+"Regular.ttf", 24) 
         }
         
-                                       
-                                       
+                             
                                        
     def truncate(self, str, font):
         num_chars = len(str)
