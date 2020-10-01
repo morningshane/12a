@@ -108,7 +108,7 @@ def main():
     logging.debug("-----------------------------------------------------------------------")
     t_y = 93
     for todo_item in todo_items:
-        iw.text(330, t_y, unicode(todo_item['content']), 'yaheiRegular18', 'black')
+        iw.text(329, t_y, unicode(todo_item['content']), 'yaheiRegular18', 'black')
         t_y = (t_y + 26)
         iw.line(325, (t_y - 2), 640, (t_y - 2), 'black')
         logging.debug("ITEM: "+todo_item['content'])
