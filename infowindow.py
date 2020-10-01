@@ -78,9 +78,7 @@ def main():
     temp_rect_left = (iw.width / 2) - (temp_rect_width / 2)
     temp_rect_right = (iw.width / 2) + (temp_rect_width / 2)
 
-    iw.line(268, 0, 268, 64, 'black')       # First Vertical Line
     iw.rectangle(temp_rect_left, 0, temp_rect_right, 64, 'red')
-    iw.line(372, 0, 372, 64, 'black')       # Second Vertical Line
 
     iw.bitmap(375, 0, "windSmall.bmp")      # Wind Icon
     iw.line(461, 0, 461, 64, 'black')       # Third Vertical Line
@@ -91,15 +89,11 @@ def main():
     iw.bitmap(554, 0, "snowSmall.bmp")      # Snow Icon
     
     # Center cal/todo divider line
-    iw.line(314, 90, 314, 384, 'black')     # Left Black line
     iw.rectangle(315, 64, 325, 384, 'red')  # Red Rectangle
-    iw.line(326, 90, 326, 384, 'black')     # Right Black line
 
 
     # Calendar / Todo Title Line
-    iw.line(0, 64, 640, 64, 'black')        # Top Line
     iw.rectangle(0, 65, 640, 90, 'red')     # Red Rectangle 
-    iw.line(0, 91, 640, 91, 'black')        # Bottom Black Line
 
     # Todo / Weather Titles
     iw.text(460, 60, u"待办", 'yaheiRegular24', 'white')
