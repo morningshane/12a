@@ -99,7 +99,7 @@ def main():
     # Todo / Weather Titles
     iw.text(460, 60, u"待办", 'yaheiRegular24', 'white')
     iw.text(130, 60, u"日历", 'yaheiRegular24', 'white')
-    iw.text(70, 30, time.strftime("%a %d-%m-%Y"), 'robotoBlack24', 'red')
+    iw.text(68, 32, time.strftime("%a %d-%m-%Y"), 'robotoBlack24', 'red')
 
 
     # DISPLAY TODO INFO
