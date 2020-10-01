@@ -67,7 +67,7 @@ class InfoWindow():
         yahei = self.getCWD()+"/fonts/yahei/Yahei-"
         self.fonts = {
 
-            'yaheiRegular18': ImageFont.truetype(yahei+"Regular.ttf", 18) 
+            'yaheiRegular18': ImageFont.truetype(yahei+"Regular.ttf", 18), 
             'yaheiRegular24': ImageFont.truetype(yahei+"Regular.ttf", 24)      
         }
         
