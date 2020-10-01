@@ -81,8 +81,10 @@ def main():
     iw.rectangle(temp_rect_left, 0, temp_rect_right, 64, 'red')
 
     iw.bitmap(375, 0, "windSmall.bmp")      # Wind Icon
+    iw.line(461, 0, 461, 64, 'black')       # Third Vertical Line
 
     iw.bitmap(464, 0, "rainSmall.bmp")      # Rain Icon
+    iw.line(550, 0, 550, 64, 'black')       # Fourth Vertical Line
 
     iw.bitmap(554, 0, "snowSmall.bmp")      # Snow Icon
     
@@ -160,15 +162,15 @@ def main():
 
     # Wind 
     iw.text(405, 5, weather['wind']['dir'], 'robotoRegular14', 'black')
-    iw.text(380, 31, str(weather['wind']['speed'])+u_speed, 'robotoRegular14', 'black')
+    iw.text(370, 31, str(weather['wind']['speed'])+u_speed, 'robotoRegular14', 'black')
 
     # Rain
-    iw.text(481, 31, "1hr: "+str(weather['rain']['1h']), 'robotoRegular14', 'black')
-    iw.text(481, 46, "3hr: "+str(weather['rain']['3h']), 'robotoRegular14', 'black')
+    iw.text(465, 31, "1hr: "+str(weather['rain']['1h']), 'robotoRegular14', 'black')
+    iw.text(465, 46, "3hr: "+str(weather['rain']['3h']), 'robotoRegular14', 'black')
 
     # Snow
-    iw.text(573, 31, "1hr: "+str(weather['snow']['1h']), 'robotoRegular14', 'black')
-    iw.text(573, 46, "3hr: "+str(weather['snow']['3h']), 'robotoRegular14', 'black')
+    iw.text(540, 31, "1hr: "+str(weather['snow']['1h']), 'robotoRegular14', 'black')
+    iw.text(540, 46, "3hr: "+str(weather['snow']['3h']), 'robotoRegular14', 'black')
 
     # Write to screen
     # =========================================================================
