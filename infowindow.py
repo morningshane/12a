@@ -121,7 +121,7 @@ def main():
     c_y = 94
 
     # Time and date divider line
-    (dt_x, dt_y) = iw.getFont('robotoRegular10').getsize('12-99-2000')
+    (dt_x, dt_y) = iw.getFont('robotoRegular10').getsize('99-12-2000')
 
     for cal_item in cal_items:
         (x, y) = iw.text(3, (c_y - 1), str(cal_item['date']), 'robotoRegular10', 'black')
