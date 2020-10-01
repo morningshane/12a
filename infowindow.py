@@ -112,7 +112,7 @@ def main():
     todo_items = todo.list()
     logging.debug("Todo Items")
     logging.debug("-----------------------------------------------------------------------")
-    t_y = 94
+    t_y = 92
     for todo_item in todo_items:
         iw.text(333, t_y, unicode(todo_item['content']), 'yaheiRegular18', 'black')
         t_y = (t_y + 26)
