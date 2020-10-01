@@ -112,7 +112,7 @@ def main():
     todo_items = todo.list()
     logging.debug("Todo Items")
     logging.debug("-----------------------------------------------------------------------")
-    t_y = 92
+    t_y = 88
     for todo_item in todo_items:
         iw.text(333, t_y, unicode(todo_item['content']), 'yaheiRegular18', 'black')
         t_y = (t_y + 24)
@@ -124,7 +124,7 @@ def main():
     cal_items = cal.list()
     logging.debug("Calendar Items")
     logging.debug("-----------------------------------------------------------------------")
-    c_y = 92
+    c_y = 88
 
     # Time and date divider line
     (dt_x, dt_y) = iw.getFont('robotoRegular14').getsize('12-99-2000')
