@@ -54,7 +54,7 @@ class InfoWindow():
 
     def initFonts(self):
         roboto = self.getCWD()+"/fonts/roboto/Roboto-"
-        yahei = self.getCWD()+"/fonts/Yahei-"
+        yahei = self.getCWD()+"/fonts/yahei/Yahei-"
         self.fonts = {
 
             'robotoBlack24': ImageFont.truetype(roboto+"Black.ttf", 24),
