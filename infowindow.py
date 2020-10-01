@@ -8,6 +8,7 @@ import traceback
 from mod_infowindow import infowindow
 import sys
 import os
+import time
 picdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'pic')
 libdir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'lib')
 if os.path.exists(libdir):
@@ -98,7 +99,7 @@ def main():
     # Todo / Weather Titles
     iw.text(460, 60, u"待办", 'yaheiRegular24', 'white')
     iw.text(130, 60, u"日历", 'yaheiRegular24', 'white')
-    iw.text(70, 30, "Box Hill North", 'robotoBlack24', 'red')
+    iw.text(70, 30, "%a %Y-%m-%d", 'robotoBlack24', 'red')
 
 
     # DISPLAY TODO INFO
