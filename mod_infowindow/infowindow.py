@@ -65,8 +65,8 @@ class InfoWindow():
              
         }
         
-        'Yahei18' = ImageFont.truetype('fonts/Yahei.ttf, 18) 
-        'Yahei24' = ImageFont.truetype('fonts/Yahei.ttf, 24)
+        'Yahei18' = ImageFont.truetype('fonts/Yahei.ttf', 18) 
+        'Yahei24' = ImageFont.truetype('fonts/Yahei.ttf', 24)
                                        
                                        
                                        
