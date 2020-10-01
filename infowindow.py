@@ -115,8 +115,8 @@ def main():
     t_y = 94
     for todo_item in todo_items:
         iw.text(333, t_y, unicode(todo_item['content']), 'yaheiRegular18', 'black')
-        t_y = (t_y + 24)
-        iw.line(325, (t_y - 3), 640, (t_y - 3), 'black')
+        t_y = (t_y + 26)
+        iw.line(325, (t_y - 2), 640, (t_y - 2), 'black')
         logging.debug("ITEM: "+todo_item['content'])
         
     # DISPLAY CALENDAR INFO
@@ -134,7 +134,7 @@ def main():
         iw.line((dt_x + 5), c_y, (dt_x + 5), (c_y +32), 'black')
         iw.text(3, (c_y + 15), str(cal_item['time']), 'robotoRegular14', 'black')
         iw.text((dt_x + 7), (c_y + 5), iw.truncate(unicode(cal_item['content']), 'yaheiRegular18'), 'yaheiRegular18', 'black')
-        c_y = (c_y + 24)
+        c_y = (c_y + 26)
         iw.line(0, (c_y - 3), 313, (c_y - 3), 'black')
         # logging.debug("ITEM: "+str(cal_item['date']), str(cal_item['time']), str(cal_item['content']))
         logging.debug("ITEM: "+str(cal_item['content']))
