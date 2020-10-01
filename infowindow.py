@@ -81,10 +81,8 @@ def main():
     iw.rectangle(temp_rect_left, 0, temp_rect_right, 64, 'red')
 
     iw.bitmap(375, 0, "windSmall.bmp")      # Wind Icon
-    iw.line(461, 0, 461, 64, 'black')       # Third Vertical Line
 
     iw.bitmap(464, 0, "rainSmall.bmp")      # Rain Icon
-    iw.line(550, 0, 550, 64, 'black')       # Fourth Vertical Line
 
     iw.bitmap(554, 0, "snowSmall.bmp")      # Snow Icon
     
