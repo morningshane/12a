@@ -16,7 +16,7 @@ if os.path.exists(libdir):
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
-time.sleep(15)
+time.sleep(10)
 
 # Select pluggable module for todo list, calendar and weather.
 # Replace the mod_<name> with one of:
